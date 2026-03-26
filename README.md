@@ -12,14 +12,21 @@ Formas de resolverlo:
  1. Podemos considerar la intersección cono un solo recurso, esto implica que un solo auto pueda pasar a la vez, esto es una opción pero no la mejor porque evita que mas coches puedan pasar sin necesidad de interferir en el camino del otro.
  2. La segunda opción es dividir la intersección en 4 cuadrantes, y solo bloquear aquellos cuadrantes que el auto quiera utilizar dependiendo su ruta, es es mejor porque permite que mas coches puedan pasar, mejorando la eficiencia.
  A partir de estas 2 opciones nos quedamos con la segunda. Para esta opción mostraremos de forma grafica los que queremos realizar:
- intersección 
+  
  ![INTERSECCIÓN](1.png)
+ 
  De esta forma es como se ve nuestra intersección, cada una tiene un punto de inicio que son nuestros puntos cardinales, y lo que nos dice el problema es que van a existir autos pasando. Como sabemos esos autos tienen un punto de inicio pero también tienen un punto de salida, para la salida solo tienen permitido las siguientes situaciones:
+ 
 ![Seguir derecho](2.png)
+
 Como podemos ver el coche inicia en el sur y finaliza en el norte, aquí lo podemos ver como el auto ocupa 2 recursos que serian los dos cuadrantes.
+
 ![Vuelta a la derecha](3.png)
+
 En esta situación el coche inicia en sur y quiere ir al este para esta situación nuestro coche solo utiliza un solo recurso.
+
 ![Vuelta a la izquierda](4.png)
+
 Finalmente la ultima ruta que un coche puede tomar es vuelta a la izquierda para este caso es el que cuesta mas ya que toma mayor cantidad de recursos (3 cuadrantes).
 
 Como vimos estos son los tres casos de rutas, pero solamente cuando el coche inicia en el sur, para los demás puntos de entradas existe de igual forma tres rutas, es decir que en general existen 12 formas de pasar la intersección.
